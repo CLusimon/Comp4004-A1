@@ -78,4 +78,13 @@ public class TestItem {
 		tester.setCopynumber("100");
 		assertNotEquals("3", tester.getCopynumber());
 	}
+	
+	@Test
+	public void testToStringPass() {
+		assertEquals("["+tester.getItemid()+","+tester.getISBN()+","+tester.getCopynumber()+"]", tester.toString());
+	}
+	@Test
+	public void testToStringFail() {
+		assertNotEquals("Fail ToString", tester.toString());
+	}
 }

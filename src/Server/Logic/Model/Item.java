@@ -28,4 +28,8 @@ public class Item {
 	public void setCopynumber(String copynumber) {
 		this.copynumber = copynumber;
 	}
+	public String toString(){
+		return "["+this.itemid+","+this.ISBN+","+this.copynumber+"]";
+	}
+	
 }
