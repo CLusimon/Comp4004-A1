@@ -45,7 +45,7 @@ public class TestItem {
 	}
 	@Test
 	public void testGetISBNFail() {
-		assertNotEquals("00000000000", tester.getISBN());
+		assertNotEquals("qwertyuiopasd", tester.getISBN());
 	}
 	
 	@Test
