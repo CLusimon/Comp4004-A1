@@ -64,4 +64,14 @@ public class TestTitle {
 		assertNotEquals("Alchemist", tester.getBooktitle());
 	}
 	
+	@Test
+	public void testToStringPass() {
+		assertEquals("["+tester.getISBN()+","+tester.getBooktitle()+"]", tester.toString());
+	}
+	
+	@Test
+	public void testToStringFail() {
+		assertNotEquals("Fail ToString", tester.toString());
+	}
+	
 }
