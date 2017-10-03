@@ -59,4 +59,12 @@ public class TestItem {
 		assertNotEquals("1234567890123", tester.getISBN());
 	}
 	
+	@Test
+	public void testGetCopynumberPass() {
+		assertEquals("3", tester.getCopynumber());
+	}
+	@Test
+	public void testGetCopynumberFail() {
+		assertNotEquals("2", tester.getCopynumber());
+	}
 }
