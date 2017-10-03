@@ -25,4 +25,7 @@ public class Item {
 	public String getCopynumber() {
 		return copynumber;
 	}
+	public void setCopynumber(String copynumber) {
+		this.copynumber = copynumber;
+	}
 }

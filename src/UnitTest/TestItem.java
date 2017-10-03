@@ -29,7 +29,7 @@ public class TestItem {
 	}
 	
 	@Test
-	public void testSetItemIdNPass() {
+	public void testSetItemIdPass() {
 		tester.setItemid(4);
 		assertEquals(4, tester.getItemid());
 	}
@@ -60,11 +60,22 @@ public class TestItem {
 	}
 	
 	@Test
-	public void testGetCopynumberPass() {
+	public void testGetCopyNumberPass() {
 		assertEquals("3", tester.getCopynumber());
 	}
 	@Test
-	public void testGetCopynumberFail() {
+	public void testGetCopyNumberFail() {
 		assertNotEquals("2", tester.getCopynumber());
+	}
+	
+	@Test
+	public void testSetCopyNumberPass() {
+		tester.setCopynumber("100");
+		assertEquals("100", tester.getCopynumber());
+	}
+	@Test
+	public void testSetCopyNumberFail() {
+		tester.setCopynumber("100");
+		assertNotEquals("3", tester.getCopynumber());
 	}
 }
