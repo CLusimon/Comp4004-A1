@@ -19,4 +19,14 @@ public class TestFee {
 	public void testConstructorFail() {
 		assertNull(tester1);
 	}
+	
+	@Test
+	public void testGetUserIdPass() {
+		assertEquals(2, tester.getUserid());
+	}
+	
+	@Test
+	public void testGetUserIdFail() {
+		assertNotEquals(222, tester.getUserid());
+	}
 }
