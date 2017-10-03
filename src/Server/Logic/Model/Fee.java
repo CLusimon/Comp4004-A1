@@ -8,7 +8,11 @@ public class Fee {
 		this.fee=fee;
 	}
 	
-	public int getUserid() {
+	public int getUserid(){
 		return userid;
+	}
+	
+	public void setUserid(int userid) {
+		this.userid = userid;
 	}
 }

@@ -29,4 +29,16 @@ public class TestFee {
 	public void testGetUserIdFail() {
 		assertNotEquals(222, tester.getUserid());
 	}
+	
+	@Test
+	public void testSetUserIdPass() {
+		tester.setUserid(1012);
+		assertEquals(1012, tester.getUserid());
+	}
+	
+	@Test
+	public void testSetUserIdFail() {
+		tester.setUserid(100);
+		assertNotEquals(90, tester.getUserid());
+	}
 }
