@@ -7,12 +7,13 @@ public class Fee {
 		this.userid=userid;
 		this.fee=fee;
 	}
-	
 	public int getUserid(){
 		return userid;
 	}
-	
 	public void setUserid(int userid) {
 		this.userid = userid;
+	}
+	public int getFee() {
+		return fee;
 	}
 }
