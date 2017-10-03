@@ -14,7 +14,6 @@ public class TestTitle {
 	public void testConstructorPass() {
 		assertNotNull(tester);
 	}
-	
 	@Test
 	public void testConstructorFail() {
 		assertNull(tester1);
@@ -24,7 +23,6 @@ public class TestTitle {
 	public void testGetISBNPass() {
 		assertEquals("12345678910111", tester.getISBN());
 	}
-	
 	@Test
 	public void testGetISBNFail() {
 		assertNotEquals("1", tester.getISBN());
@@ -35,7 +33,6 @@ public class TestTitle {
 		tester.setISBN("qwertyuiopasd");
 		assertEquals("qwertyuiopasd", tester.getISBN());
 	}
-	
 	@Test
 	public void testSetISBNFail() {
 		tester.setISBN("qwertyuiopasd");
@@ -46,7 +43,6 @@ public class TestTitle {
 	public void testGetBookTitlePass() {
 		assertEquals("Alchemist", tester.getBooktitle());
 	}
-	
 	@Test
 	public void testGetBookTitleFail() {
 		assertNotEquals("Not Alchemist", tester.getBooktitle());
@@ -57,7 +53,6 @@ public class TestTitle {
 		tester.setBooktitle("New Alchemist");
 		assertEquals("New Alchemist", tester.getBooktitle());
 	}
-	
 	@Test
 	public void testSetBookTitleFail() {
 		tester.setBooktitle("New Alchemist");
@@ -68,7 +63,6 @@ public class TestTitle {
 	public void testToStringPass() {
 		assertEquals("["+tester.getISBN()+","+tester.getBooktitle()+"]", tester.toString());
 	}
-	
 	@Test
 	public void testToStringFail() {
 		assertNotEquals("Fail ToString", tester.toString());

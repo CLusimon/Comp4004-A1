@@ -23,9 +23,20 @@ public class TestItem {
 	public void testGetItemIdPass() {
 		assertEquals(2, tester.getItemid());
 	}
-	
 	@Test
 	public void testGetItemIdFail() {
 		assertNotEquals(1, tester.getItemid());
 	}
+	
+	@Test
+	public void testSetItemIdNPass() {
+		tester.setItemid(4);
+		assertEquals(4, tester.getItemid());
+	}
+	@Test
+	public void testSetItemIdFail() {
+		tester.setItemid(4);
+		assertNotEquals(2, tester.getItemid());
+	}
+	
 }
