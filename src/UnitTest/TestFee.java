@@ -50,4 +50,15 @@ public class TestFee {
 	public void testGetFeeFail() {
 		assertNotEquals(501, tester.getFee());
 	}
+	@Test
+	public void testSetFeePass() {
+		tester.setFee(400);
+		assertEquals(400, tester.getFee());
+	}
+	
+	@Test
+	public void testSetFeeFail() {
+		tester.setFee(30);
+		assertNotEquals(500, tester.getFee());
+	}
 }
