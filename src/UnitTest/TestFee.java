@@ -61,4 +61,14 @@ public class TestFee {
 		tester.setFee(30);
 		assertNotEquals(500, tester.getFee());
 	}
+	
+	@Test
+	public void testToStringPass() {
+		assertEquals("["+tester.getUserid()+","+tester.getFee()+"]", tester.toString());
+	}
+	
+	@Test
+	public void testToStringFail() {
+		assertNotEquals("Fail To String", tester.toString());
+	}
 }
