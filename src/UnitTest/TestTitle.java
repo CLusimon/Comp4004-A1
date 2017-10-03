@@ -43,12 +43,25 @@ public class TestTitle {
 	}
 	
 	@Test
-	public void testGetbookTitlePass() {
+	public void testGetBookTitlePass() {
 		assertEquals("Alchemist", tester.getBooktitle());
 	}
 	
 	@Test
-	public void testGetbookTitleFail() {
+	public void testGetBookTitleFail() {
 		assertNotEquals("Not Alchemist", tester.getBooktitle());
 	}
+	
+	@Test
+	public void testSetBookTitlePass() {
+		tester.setBooktitle("New Alchemist");
+		assertEquals("New Alchemist", tester.getBooktitle());
+	}
+	
+	@Test
+	public void testSetBookTitleFail() {
+		tester.setBooktitle("New Alchemist");
+		assertNotEquals("Alchemist", tester.getBooktitle());
+	}
+	
 }

@@ -21,4 +21,7 @@ public class Title {
 		return booktitle;
 	}
 
+	public void setBooktitle(String booktitle) {
+		this.booktitle = booktitle;
+	}
 }
