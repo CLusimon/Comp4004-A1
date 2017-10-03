@@ -14,10 +14,18 @@ public class TestItem {
 	public void testConstructorPass(){
 		assertNotNull(tester);
 	}
-	
 	@Test
 	public void testConstructorFail(){
 		assertNull(tester1);
 	}
 	
+	@Test
+	public void testGetItemIdPass() {
+		assertEquals(2, tester.getItemid());
+	}
+	
+	@Test
+	public void testGetItemIdFail() {
+		assertNotEquals(1, tester.getItemid());
+	}
 }

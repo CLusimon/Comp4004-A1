@@ -10,4 +10,7 @@ public class Item {
 		this.ISBN=ISBN;
 		this.copynumber=copynumber;
 	}
+	public int getItemid() {
+		return itemid;
+	}
 }
