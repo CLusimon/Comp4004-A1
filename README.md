@@ -1,1 +1,4 @@
-# Comp4004-A1
+# Comp4004-Assignment 1
+Name: Ngo, Pham Minh Thong
+Student# 100848224
+
