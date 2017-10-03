@@ -29,4 +29,26 @@ public class TestTitle {
 	public void testGetISBNFail() {
 		assertNotEquals("1", tester.getISBN());
 	}
+	
+	@Test
+	public void testSetISBNPass() {
+		tester.setISBN("qwertyuiopasd");
+		assertEquals("qwertyuiopasd", tester.getISBN());
+	}
+	
+	@Test
+	public void testSetISBNFail() {
+		tester.setISBN("qwertyuiopasd");
+		assertNotEquals("12345678910111", tester.getISBN());
+	}
+	
+	@Test
+	public void testGetbookTitlePass() {
+		assertEquals("Alchemist", tester.getBooktitle());
+	}
+	
+	@Test
+	public void testGetbookTitleFail() {
+		assertNotEquals("Not Alchemist", tester.getBooktitle());
+	}
 }
