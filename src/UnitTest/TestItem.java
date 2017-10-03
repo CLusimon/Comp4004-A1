@@ -39,4 +39,24 @@ public class TestItem {
 		assertNotEquals(2, tester.getItemid());
 	}
 	
+	@Test
+	public void testGetISBNPass() {
+		assertEquals("1234567890123", tester.getISBN());
+	}
+	@Test
+	public void testGetISBNFail() {
+		assertNotEquals("00000000000", tester.getISBN());
+	}
+	
+	@Test
+	public void testSetISBNPass() {
+		tester.setISBN("qwertyuiopasd");
+		assertEquals("qwertyuiopasd", tester.getISBN());
+	}
+	@Test
+	public void testSetISBNFail() {
+		tester.setISBN("qwertyuiopasd");
+		assertNotEquals("1234567890123", tester.getISBN());
+	}
+	
 }
