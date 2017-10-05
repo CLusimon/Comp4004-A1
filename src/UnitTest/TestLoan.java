@@ -88,4 +88,15 @@ public class TestLoan {
 	public void testGetDateFail() {
 		assertNotEquals(date1, tester.getDate());
 	}
+	
+	@Test
+	public void testSetDatePass() {
+		tester.setDate(date1);
+		assertEquals(date1, tester.getDate());
+	}
+	@Test
+	public void testSetDateFail() {
+		tester.setDate(date1);
+		assertNotEquals(date, tester.getDate());
+	}
 }
