@@ -20,11 +20,22 @@ public class TestUser {
 	}
 	
 	@Test
-	public void testUserIdPass() {
+	public void testGetUserIdPass() {
 		assertEquals(2, tester.getUserid());
 	}
 	@Test
-	public void testUserItemIdFail() {
+	public void testGetUserItemIdFail() {
 		assertNotEquals(1, tester.getUserid());
+	}
+	
+	@Test
+	public void testSetUserIdPass() {
+		tester.setUserid(4);
+		assertEquals(4, tester.getUserid());
+	}
+	@Test
+	public void testSetUserIdFail() {
+		tester.setUserid(4);
+		assertNotEquals(2, tester.getUserid());
 	}
 }
