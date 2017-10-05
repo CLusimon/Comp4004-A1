@@ -78,4 +78,15 @@ public class TestUser {
 		tester.setPassword("Clus");
 		assertNotEquals("Michelle", tester.getPassword());
 	}
+	
+	
+	@Test
+	public void testToStringPass() {
+		assertEquals("["+tester.getUserid()+","+tester.getUsername()+","+tester.getPassword()+"]", tester.toString());
+	}
+	@Test
+	public void testToStringFail() {
+		assertNotEquals("Fail ToString", tester.toString());
+	}
+	
 }
