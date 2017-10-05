@@ -49,13 +49,22 @@ public class TestUser {
 	}
 	
 	@Test
-	public void testSetUserNamePass() {
+	public void testSetUsernamePass() {
 		tester.setUsername("clus@carleton.ca");
 		assertEquals("clus@carleton.ca", tester.getUsername());
 	}
 	@Test
-	public void testSetUserNameFail() {
+	public void testSetUsernameFail() {
 		tester.setUsername("clus@carleton.ca");
 		assertNotEquals("michelle@carleton.ca", tester.getUsername());
+	}
+	
+	@Test
+	public void testGetPasswordPass() {
+		assertEquals("Michelle", tester.getPassword());
+	}
+	@Test
+	public void testGetPasswordFail() {
+		assertNotEquals("Clus", tester.getPassword());
 	}
 }
