@@ -47,4 +47,15 @@ public class TestUser {
 	public void testGetUsernameFail() {
 		assertNotEquals("michelle", tester.getUsername());
 	}
+	
+	@Test
+	public void testSetUserNamePass() {
+		tester.setUsername("clus@carleton.ca");
+		assertEquals("clus@carleton.ca", tester.getUsername());
+	}
+	@Test
+	public void testSetUserNameFail() {
+		tester.setUsername("clus@carleton.ca");
+		assertNotEquals("michelle@carleton.ca", tester.getUsername());
+	}
 }
