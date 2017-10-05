@@ -26,4 +26,7 @@ public class Loan {
 	public void setUserid(int userid) {
 		this.userid = userid;
 	}
+	public String getIsbn() {
+		return isbn;
+	}
 }

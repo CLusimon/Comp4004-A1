@@ -41,4 +41,13 @@ public class TestLoan {
 		tester.setUserid(30);
 		assertNotEquals(4, tester.getUserid());
 	}
+	
+	@Test
+	public void testGetISBNPass() {
+		assertEquals("1234567890123", tester.getIsbn());
+	}
+	@Test
+	public void testGetISBNFail() {
+		assertNotEquals("qwertyuiopasd", tester.getIsbn());
+	}
 }
