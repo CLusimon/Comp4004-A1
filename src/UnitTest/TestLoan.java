@@ -50,4 +50,15 @@ public class TestLoan {
 	public void testGetISBNFail() {
 		assertNotEquals("qwertyuiopasd", tester.getIsbn());
 	}
+	
+	@Test
+	public void testSetISBNPass() {
+		tester.setIsbn("qwertyuiopasd");
+		assertEquals("qwertyuiopasd", tester.getIsbn());
+	}
+	@Test
+	public void testSetISBNFail() {
+		tester.setIsbn("qwertyuiopasd");
+		assertNotEquals("1234567890123", tester.getIsbn());
+	}
 }
