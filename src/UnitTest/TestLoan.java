@@ -31,4 +31,14 @@ public class TestLoan {
 		assertNotEquals(000, tester.getUserid());
 	}
 
+	@Test
+	public void testSetUserIdPass() {
+		tester.setUserid(555);
+		assertEquals(555, tester.getUserid());
+	}
+	@Test
+	public void testSetUserIdFail() {
+		tester.setUserid(30);
+		assertNotEquals(4, tester.getUserid());
+	}
 }
