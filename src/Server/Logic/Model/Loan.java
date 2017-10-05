@@ -47,4 +47,7 @@ public class Loan {
 	public String getRenewstate() {
 		return renewstate;
 	}
+	public void setRenewstate(String renewstate) {
+		this.renewstate = renewstate;
+	}
 }
