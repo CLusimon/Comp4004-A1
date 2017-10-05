@@ -12,7 +12,7 @@ public class TestUser {
 
 	@Test
 	public void testConstructorPass(){
-		assertNotNull(tester);
+		assertNotNull(tester); 
 	}
 	@Test
 	public void testConstructorFail(){
@@ -37,5 +37,14 @@ public class TestUser {
 	public void testSetUserIdFail() {
 		tester.setUserid(4);
 		assertNotEquals(2, tester.getUserid());
+	}
+	
+	@Test
+	public void testGetUsernamePass() {
+		assertEquals("michelle@carleton.ca", tester.getUsername());
+	}
+	@Test
+	public void testGetUsernameFail() {
+		assertNotEquals("michelle", tester.getUsername());
 	}
 }
