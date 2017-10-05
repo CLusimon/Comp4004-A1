@@ -99,4 +99,13 @@ public class TestLoan {
 		tester.setDate(date1);
 		assertNotEquals(date, tester.getDate());
 	}
+	
+	@Test
+	public void testGetRenewstatePass() {
+		assertEquals("4", tester.getRenewstate());
+	}
+	@Test
+	public void testGetRenewstateFail() {
+		assertNotEquals("2", tester.getRenewstate());
+	}
 }
