@@ -61,4 +61,13 @@ public class TestLoan {
 		tester.setIsbn("qwertyuiopasd");
 		assertNotEquals("1234567890123", tester.getIsbn());
 	}
+	
+	@Test
+	public void testGetCopyNumberPass() {
+		assertEquals("3", tester.getCopynumber());
+	}
+	@Test
+	public void testGetCopyNumberFail() {
+		assertNotEquals("2", tester.getCopynumber());
+	}
 }
