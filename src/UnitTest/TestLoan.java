@@ -1,6 +1,9 @@
 package UnitTest;
 
 import static org.junit.Assert.*;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import org.junit.Test;
 import Server.Logic.Model.Loan;
@@ -10,6 +13,7 @@ public class TestLoan {
 	Date date1 = new GregorianCalendar(2016, Calendar.FEBRUARY, 11).getTime(); 
 	Loan tester = new Loan (4,"1234567890123","3",date ,"4");
 	Loan tester1;
+	DateFormat format1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 	
 	@Test
 	public void testConstructorPass(){
@@ -118,5 +122,14 @@ public class TestLoan {
 	public void testSetRenewstateFail() {
 		tester.setRenewstate("5");
 		assertNotEquals("4", tester.getRenewstate());
+	}
+	
+	@Test
+	public void testToStringPass() {
+		assertEquals("["+tester.getUserid()+","+tester.getIsbn()+","+tester.getCopynumber()+","+format1.format(tester.getDate())+","+tester.getRenewstate()+"]", tester.toString());
+	}
+	@Test
+	public void testToStringFail() {
+		assertNotEquals("Fail ToString", tester.toString());
 	}
 }
