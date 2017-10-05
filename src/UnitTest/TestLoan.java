@@ -1,15 +1,13 @@
 package UnitTest;
 
 import static org.junit.Assert.*;
-
-import java.util.Date;
-
+import java.util.*;
 import org.junit.Test;
-
 import Server.Logic.Model.Loan;
 
 public class TestLoan {
-	Date date = new Date();
+	Date date = new GregorianCalendar(2015, Calendar.FEBRUARY, 11).getTime();
+	Date date1 = new GregorianCalendar(2016, Calendar.FEBRUARY, 11).getTime(); 
 	Loan tester = new Loan (4,"1234567890123","3",date ,"4");
 	Loan tester1;
 	
@@ -80,5 +78,14 @@ public class TestLoan {
 	public void testSetCopyNumberFail() {
 		tester.setCopynumber("100");
 		assertNotEquals("3", tester.getCopynumber());
+	}
+	
+	@Test
+	public void testGetDatePass() {
+		assertEquals(date, tester.getDate());
+	}
+	@Test
+	public void testGetDateFail() {
+		assertNotEquals(date1, tester.getDate());
 	}
 }
