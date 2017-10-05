@@ -18,4 +18,13 @@ public class TestUser {
 	public void testConstructorFail(){
 		assertNull(tester1);
 	}
+	
+	@Test
+	public void testUserIdPass() {
+		assertEquals(2, tester.getUserid());
+	}
+	@Test
+	public void testUserItemIdFail() {
+		assertNotEquals(1, tester.getUserid());
+	}
 }
