@@ -19,4 +19,8 @@ public class Loan {
 	}
 	
 	DateFormat format1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+	
+	public int getUserid() {
+		return userid;
+	}
 }
