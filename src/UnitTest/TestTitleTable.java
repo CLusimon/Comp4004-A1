@@ -23,5 +23,10 @@ public class TestTitleTable {
 		TitleTable.getInstance().createtitle("testISBN", "Testing");
 		assertTrue(TitleTable.getInstance().lookup("testISBN"));
 	}
+	
+	@Test
+	public void testGetTitleTable(){
+		assertNotNull(TitleTable.getInstance().getTitleTable());
+	}
 
 }

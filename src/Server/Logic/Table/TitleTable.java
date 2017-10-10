@@ -3,6 +3,8 @@ package Server.Logic.Table;
 import java.util.ArrayList;
 import java.util.List;
 import Server.Logic.Model.Title;
+//import server.logic.tables.ItemTable;
+//import server.logic.tables.LoanTable;
 
 
 public class TitleTable {
@@ -62,4 +64,41 @@ public class TitleTable {
 		}
 		return result;
 	}
+/*	
+	public Object delete(String string) {
+		String result="";
+		int index=0;
+		int flag=0;
+		for(int i=0;i<titleList.size();i++){
+			if(titleList.get(i).getISBN().equalsIgnoreCase(string)){
+				flag=flag+1;
+				index=i;
+			}else{
+				flag=flag+0;
+			}
+		}
+		if(flag!=0){
+			boolean loan=LoanTable.getInstance().checkLoan(string);
+			if(loan){
+				String string2=titleList.get(index).getBooktitle();
+				ItemTable.getInstance().deleteAll(string);
+				titleList.remove(index);
+				result="success";
+				//logger.info(String.format("Operation:Delete Title;Title Info:[%s,%s];State:Success", string,string2));
+			}else{
+				result="Active Loan Exists";
+				//logger.info(String.format("Operation:Delete Title;ISBN Info:[%s];State:Fail;Reason:Active Loan Exists.", string));
+			}
+		}else{
+			result="The Title Does Not Exist";
+			//logger.info(String.format("Operation:Delete Title;ISBN Info:[%s];State:Fail;Reason:The Title Does Not Exist.", string));
+		}
+		return result;
+	}
+	
+*/
+	public List<Title> getTitleTable() {
+		return titleList;
+	}
+	
 }
