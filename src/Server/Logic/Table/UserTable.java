@@ -8,6 +8,8 @@ import java.util.List;
 //import org.apache.log4j.Logger;
 
 import Server.Logic.Model.User;
+//import Server.Logic.Table.FeeTable;
+//import Server.Logic.Table.LoanTable;
 
 //import utilities.Trace;
 
@@ -70,4 +72,59 @@ public class UserTable {
 	public List<User> getUserTable() {
 		return userList;
 	}
+	/*
+	public Object delete(int i) {
+		//Since the userid in "User Creation" is automatically assigned to the user,upon its creation.
+		//Each user has a unique userid.Even it is deleted,its userid can not be assigned to other user.
+		//To maintain the correctness of the data,here instead delete index from the List.
+		//I choose to remove the user's information instead the whole index.Keep its userid as reference.
+		String result="";
+		boolean loan=LoanTable.getInstance().checkUser(i);
+		int flag=0;
+		int index=0;
+		for(int j=0;j<userList.size();j++){
+			if(userList.get(j).getUserid()==i){
+				index=j;
+				flag=flag+1;
+			}else{
+				flag=flag+0;
+			}
+		}
+		
+		if(flag==0){
+			result="The User Does Not Exist";
+			//logger.info(String.format("Operation:Delete User;User Info:[%s,%s];State:Fail;Reason:The User Does Not Exist.", "N/A","N/A"));
+		}else{
+			boolean fee=FeeTable.getInstance().lookup(i);
+			String string=userList.get(index).getUsername();
+			String string2=userList.get(index).getPassword();
+			if(fee && loan){
+				userList.get(index).setUserid(i);
+				userList.get(index).setPassword("N/A");
+				userList.get(index).setUsername("N/A");
+				result="success";
+				//logger.info(String.format("Operation:Delete User;User Info:[%s,%s];State:Success", string,string2));
+			}else if(fee==false){
+				result="Outstanding Fee Exists";
+				//logger.info(String.format("Operation:Delete User;User Info:[%s,%s];State:Fail;Reason:Outstanding Fee Exists.", string,string2));
+			}else if(loan==false){
+				result="Active Loan Exists";
+				//logger.info(String.format("Operation:Delete User;User Info:[%s,%s];State:Fail;Reason:Active Loan Exists.", string,string2));
+			}
+		}
+    
+		return result;
+
+	}*/
+	
+	public int lookup(String string) {
+		int userid=-1;
+		for(int i=0;i<userList.size();i++){
+			if(userList.get(i).getUsername().equalsIgnoreCase(string)){
+				userid=i;
+			}
+		}
+		return userid;
+	}
+	
 }

@@ -3,8 +3,6 @@ package UnitTest;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
-import Server.Logic.Table.TitleTable;
 import Server.Logic.Table.UserTable;
 
 public class TestUserTable {
@@ -25,6 +23,12 @@ public class TestUserTable {
 	@Test
 	public void testGetUserTablePass(){
 		assertNotNull(UserTable.getInstance().getUserTable());
+	}
+	@Test
+	public void testLookUpStringPass(){
+		UserTable.getInstance().createuser("tester", "testington");
+		UserTable.getInstance().createuser("tester1", "testington");
+		assertEquals(7,UserTable.getInstance().lookup("tester"));
 	}
 
 }
