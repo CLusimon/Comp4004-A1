@@ -25,7 +25,7 @@ public class TestTitleTable {
 	}
 	
 	@Test
-	public void testGetTitleTable(){
+	public void testGetTitleTablePass(){
 		assertNotNull(TitleTable.getInstance().getTitleTable());
 	}
 
