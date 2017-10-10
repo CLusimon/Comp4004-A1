@@ -12,9 +12,10 @@ public class TestTitleTable {
 	public void testConstructorPass() {
 		assertNotNull(TitleTable.getInstance());
 	}
+
 	@Test
-	public void testCreateTitlePass() {	
-		assertEquals(true,TitleTable.getInstance().createtitle("Testing", "Object"));
+	public void testCreateTitlePass(){
+		assertEquals(true,TitleTable.getInstance().createtitle("000000000", "Testing"));
 	}
 
 }
