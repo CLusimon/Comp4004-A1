@@ -1,7 +1,9 @@
 package Server.Logic.Table;
 
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 //import org.apache.log4j.Logger;
 
@@ -28,4 +30,41 @@ public class UserTable {
     public static final UserTable getInstance() {
         return UserListHolder.INSTANCE;
     }
+	public Object createuser(String string, String string2) {		
+		boolean result=true;
+		int flag=0;
+		for(int i=0;i<userList.size();i++){
+			String email=(userList.get(i)).getUsername();
+			if(email.equalsIgnoreCase(string)){
+				flag=flag+1;
+			}else{
+				flag=flag+0;	
+			}
+		}
+		if(flag==0){
+			User newuser=new User(userList.size(),string,string2);
+			result=userList.add(newuser);
+			//logger.info(String.format("Operation:Create New User;User Info:[%s,%s];State:Success", string,string2));
+		}else{
+			result=false;
+			//logger.info(String.format("Operation:Create New User;User Info:[%s,%s];State:Fail;Reason:The User already existed.", string,string2));
+		}
+		return result;	
+	}
+	public boolean lookup(int j) {
+		boolean result=true;
+		int flag=0;
+		for(int i=0;i<userList.size();i++){
+			int userid=(userList.get(i)).getUserid();
+			if(userid==j){
+				flag=flag+1;
+			}else{
+				flag=flag+0;	
+			}
+		}
+		if(flag==0){
+			result=false;
+		}
+		return result;
+	}
 }
