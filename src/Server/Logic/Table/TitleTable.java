@@ -44,6 +44,7 @@ public class TitleTable {
 		}
 		return result;	
 	}
+
 	
 	public boolean lookup(String string) {
 		boolean result=true;

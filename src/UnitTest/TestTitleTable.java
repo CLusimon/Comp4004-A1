@@ -17,5 +17,11 @@ public class TestTitleTable {
 	public void testCreateTitlePass(){
 		assertEquals(true,TitleTable.getInstance().createtitle("000000000", "Testing"));
 	}
+	
+	@Test
+	public void testLookUpPass(){
+		TitleTable.getInstance().createtitle("testISBN", "Testing");
+		assertTrue(TitleTable.getInstance().lookup("testISBN"));
+	}
 
 }
