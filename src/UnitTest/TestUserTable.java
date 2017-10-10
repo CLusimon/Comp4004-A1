@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import Server.Logic.Table.TitleTable;
 import Server.Logic.Table.UserTable;
 
 public class TestUserTable {
@@ -20,6 +21,10 @@ public class TestUserTable {
 	public void testLookUpPass(){
 		UserTable.getInstance().createuser("5", "password");
 		assertTrue(UserTable.getInstance().lookup(0));
+	}
+	@Test
+	public void testGetUserTablePass(){
+		assertNotNull(UserTable.getInstance().getUserTable());
 	}
 
 }
