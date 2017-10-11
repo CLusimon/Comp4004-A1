@@ -111,4 +111,7 @@ public class ItemTable {
 		}
 		
 	}
+	public List<Item> getItemTable() {
+		return itemList;
+	}
 }

@@ -27,4 +27,8 @@ public class TestItemTable {
 		ItemTable.getInstance().deleteAll("9781442616899");
 		assertEquals(false,ItemTable.getInstance().lookup("9781442616899", "1"));
 	}
+	@Test
+	public void testGetItemTablePass(){
+		assertNotNull(ItemTable.getInstance().getItemTable());
+	}
 }
