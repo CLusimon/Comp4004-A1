@@ -18,6 +18,9 @@ public class TestLoanTable {
 	@Test
 	public void testCreateLoan(){
 		Date date = new GregorianCalendar(2015, Calendar.FEBRUARY, 11).getTime();
-		assertNotNull(LoanTable.getInstance().createloan(0, "9781442668584", "1",date));
+		assertEquals("User Invalid",LoanTable.getInstance().createloan(-5, "9781442668584", "1",date));
+		assertEquals("ISBN Invalid",LoanTable.getInstance().createloan(0, "9781442", "1",date));
+		assertEquals("Copynumber Invalid",LoanTable.getInstance().createloan(0, "9781442668584", "25",date));
+		assertEquals("The Item is Not Available",LoanTable.getInstance().createloan(0, "9781442668584", "1",date));
 	}
 }
