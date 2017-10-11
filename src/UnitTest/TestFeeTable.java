@@ -25,5 +25,8 @@ public class TestFeeTable {
 		FeeTable.getInstance().applyfee(0, 789465123);
 		assertNotEquals(5,FeeTable.getInstance().lookupfee(0));
 	}
-
+	@Test
+	public void testGetFeeTablePass(){
+		assertNotNull(FeeTable.getInstance().getFeeTable());
+	}
 }
