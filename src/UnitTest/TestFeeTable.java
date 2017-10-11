@@ -16,5 +16,9 @@ public class TestFeeTable {
 	public void testLookUpPass(){
 		assertEquals(false,FeeTable.getInstance().lookup(0));
 	}
+	@Test
+	public void testLookUpFee(){
+		assertEquals(5,FeeTable.getInstance().lookupfee(0));
+	}
 
 }
