@@ -7,6 +7,7 @@ import java.util.List;
 //import org.apache.log4j.Logger;
 
 import Server.Logic.Model.Loan;
+import Utilities.Config;
 
 
 //import utilities.Trace;
@@ -26,7 +27,7 @@ public class LoanTable {
     public static final LoanTable getInstance() {
         return LoanListHolder.INSTANCE;
     }
-    /*
+    
     public Object createloan(int i, String string, String string2, Date date) {
 		String result="";
 		boolean user=UserTable.getInstance().lookup(i);
@@ -37,35 +38,70 @@ public class LoanTable {
 		boolean fee=FeeTable.getInstance().lookup(i);
 		if(user==false){
 			result="User Invalid";
-			logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Invalid User.", i,string,string2,dateformat(date)));
+			//logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Invalid User.", i,string,string2,dateformat(date)));
 		}else if(isbn==false){
 			result="ISBN Invalid";
-			logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Invalid ISBN.", i,string,string2,dateformat(date)));
+			//logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Invalid ISBN.", i,string,string2,dateformat(date)));
 		}else if(copynumber==false){
 			result="Copynumber Invalid";
-			logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Invalid Copynumber.", i,string,string2,dateformat(date)));
+			//logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Invalid Copynumber.", i,string,string2,dateformat(date)));
 		}else{
 			if(oloan){
 				if(limit && fee){
 				Loan loan=new Loan(i,string,string2,date,"0");
 				loanList.add(loan);
 				result="success";
-				logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Success", i,string,string2,dateformat(date)));
+				//logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Success", i,string,string2,dateformat(date)));
 				}else if(limit==false){
 					result="The Maximun Number of Items is Reached";
-					logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Maximun Number of Items is Reached.", i,string,string2,dateformat(date)));
+					//logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Maximun Number of Items is Reached.", i,string,string2,dateformat(date)));
 				}else if(fee==false){
 					result="Outstanding Fee Exists";
-					logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Outstanding Fee Exists.", i,string,string2,dateformat(date)));
+					//logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:Outstanding Fee Exists.", i,string,string2,dateformat(date)));
 				}
 			}else{
 				result="The Item is Not Available";
-				logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Item is Not Available.", i,string,string2,dateformat(date)));
+				//logger.info(String.format("Operation:Borrow Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Item is Not Available.", i,string,string2,dateformat(date)));
 			}
 		}
     	return result;
 	}
-	*/
+    
+	public boolean lookup(int j, String string, String string2) {
+		boolean result=true;
+		int flag=0;
+		for(int i=0;i<loanList.size();i++){
+			String ISBN=(loanList.get(i)).getIsbn();
+			String copynumber=(loanList.get(i)).getCopynumber();
+			if(ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+				flag=flag+1;
+			}else{
+				flag=flag+0;	
+			}
+		}
+		if(flag!=0){
+			result=false;
+		}
+		return result;
+	}
+    
+	public boolean checkLimit(int j) {
+		boolean result=true;
+		int flag=0;
+		for(int i=0;i<loanList.size();i++){
+			int userid=(loanList.get(i)).getUserid();
+			if(userid==j){
+				flag=flag+1;
+			}else{
+				flag=flag+0;	
+			}
+		}
+		if(flag>=Config.MAX_BORROWED_ITEMS){
+			result=false;
+		}
+		return result;
+	}
+
 	public List<Loan> getLoanTable() {
 		return loanList;
 	}

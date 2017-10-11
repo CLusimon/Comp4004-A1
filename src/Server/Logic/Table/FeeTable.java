@@ -121,4 +121,35 @@ public class FeeTable {
 	public List<Fee> getFeeTable() {
 		return feeList;
 	}
+	/*
+	public Object payfine(int i) {
+		String result="";
+		boolean oloan=LoanTable.getInstance().looklimit(i);
+		int fee=0;
+		int index=0;
+		boolean user=FeeTable.getInstance().checkuser(i);
+		if(user){
+			for(int m=0;m<feeList.size();m++){
+				if(feeList.get(m).getUserid()==i){
+					fee=feeList.get(m).getFee();
+					index=m;
+				}else{
+					fee=0;
+				}
+			}
+		}else{
+			fee=0;
+		}
+		if(oloan==false){
+			result="Borrowing Items Exist";
+			//logger.info(String.format("Operation:Pay Fine;Fee Info:[%d,%d];State:Fail;Reason:Borrowing Items Exist.", i,fee));
+		}else{
+			feeList.get(index).setUserid(i);
+			feeList.get(index).setFee(0);
+			result="success";
+			//logger.info(String.format("Operation:Pay Fine;Fee Info:[%d,%d];State:Success", i,fee));
+		}
+		return result;
+	}
+	*/
 }
