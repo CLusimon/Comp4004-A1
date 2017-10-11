@@ -23,4 +23,8 @@ public class TestLoanTable {
 		assertEquals("Copynumber Invalid",LoanTable.getInstance().createloan(0, "9781442668584", "25",date));
 		assertEquals("The Item is Not Available",LoanTable.getInstance().createloan(0, "9781442668584", "1",date));
 	}
+	@Test
+	public void testLookUp(){
+		assertEquals(false,LoanTable.getInstance().lookup(0, "9781442668584", "1"));
+	}
 }
