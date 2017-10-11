@@ -17,8 +17,13 @@ public class TestFeeTable {
 		assertEquals(false,FeeTable.getInstance().lookup(0));
 	}
 	@Test
-	public void testLookUpFee(){
+	public void testLookUpFeePass(){
 		assertEquals(5,FeeTable.getInstance().lookupfee(0));
+	}
+	@Test
+	public void testApplyFeePass(){
+		FeeTable.getInstance().applyfee(0, 789465123);
+		assertNotEquals(5,FeeTable.getInstance().lookupfee(0));
 	}
 
 }
