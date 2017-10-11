@@ -65,4 +65,50 @@ public class ItemTable {
 		}
 		return result;
 	}
+	/*
+	public Object delete(String string, String string2) {
+		//Since the itemid and copynumber in is automatically assigned to the item,upon its creation.
+		//Each item has a unique itemid and copynumber.Even it is deleted,they can not be assigned to other item.
+		//To maintain the correctness of the data,here instead delete index from the List.
+		//I choose to remove the item's information instead the whole index.
+		String result="";
+		int index=0;
+		int flag=0;
+		for(int i=0;i<itemList.size();i++){
+			String ISBN=(itemList.get(i)).getISBN();
+			String copynumber=(itemList.get(i)).getCopynumber();
+			if(ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+				index=i;
+				flag=flag+1;
+			}else{
+				flag=flag+0;
+			}
+		}
+		if(flag!=0){
+			boolean loan=LoanTable.getInstance().checkLoan(string,string2);
+			if(loan){
+			itemList.get(index).setCopynumber("N/A");
+			result="success";
+			//logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Success", string,"N/A"));
+			}else{
+				result="Active Loan Exists";
+				//logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Fail;Reason:The item is currently on loan.", string,string2));
+			}
+		}else{
+			result="The Item Does Not Exist";
+			//logger.info(String.format("Operation:Delete Item;Item Info:[%s,%s];State:Fail;Reason:The Item Does Not Exist.", string,string2));
+		}
+		return result;
+	}
+	*/
+	public void deleteAll(String string) {
+		for(int i=0;i<itemList.size();i++){
+			if(string.equalsIgnoreCase(itemList.get(i).getISBN())){
+				itemList.get(i).setISBN("N/A");
+				itemList.get(i).setCopynumber("N/A");
+				//logger.info(String.format("Operation:Delete Item Due to Title Deletion;ISBN Info:[%s];State:Success", string));
+			}
+		}
+		
+	}
 }

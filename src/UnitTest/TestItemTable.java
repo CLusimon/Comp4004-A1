@@ -22,4 +22,9 @@ public class TestItemTable {
 	public void testLookUpPass(){
 		assertEquals(true,ItemTable.getInstance().lookup("9781442668584", "1"));
 	}
+	@Test
+	public void testDeleteAllPass(){
+		ItemTable.getInstance().deleteAll("9781442616899");
+		assertEquals(false,ItemTable.getInstance().lookup("9781442616899", "1"));
+	}
 }
