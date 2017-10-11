@@ -18,4 +18,8 @@ public class TestItemTable {
 		TitleTable.getInstance().createtitle("testISBN", "Testing");
 		assertEquals(true,ItemTable.getInstance().createitem("testISBN"));
 	}
+	@Test
+	public void testLookUpPass(){
+		assertEquals(true,ItemTable.getInstance().lookup("9781442668584", "1"));
+	}
 }
