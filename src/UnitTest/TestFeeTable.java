@@ -12,5 +12,9 @@ public class TestFeeTable {
 	public void testConstructorPass() {
 		assertNotNull(FeeTable.getInstance());
 	}
+	@Test
+	public void testLookUpPass(){
+		assertEquals(false,FeeTable.getInstance().lookup(0));
+	}
 
 }
