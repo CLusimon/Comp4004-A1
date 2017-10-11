@@ -30,5 +30,13 @@ public class TestUserTable {
 		UserTable.getInstance().createuser("tester1", "testington");
 		assertEquals(7,UserTable.getInstance().lookup("tester"));
 	}
-
+	@Test
+	public void testCheckUser(){
+		UserTable.getInstance().createuser("tester", "pw");
+		UserTable.getInstance().createuser("tester1", "pw1");
+		assertEquals(1,UserTable.getInstance().checkUser("tester", "notpw")); //false pw	
+		assertEquals(2,UserTable.getInstance().checkUser("notTester1", "pw1")); //false username
+		assertEquals(0,UserTable.getInstance().checkUser("tester", "pw")); //correct info
+	
+	}
 }
