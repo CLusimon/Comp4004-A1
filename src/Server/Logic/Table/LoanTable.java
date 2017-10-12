@@ -159,4 +159,49 @@ public class LoanTable {
 		String datestr=format1.format(date);
 		return datestr;
 	}
+	public Object returnItem(int j, String string, String string2, Date date) {
+		String result="";
+		int flag=0;
+		int index=0;
+		for(int i=0;i<loanList.size();i++){
+			String ISBN=(loanList.get(i)).getIsbn();
+			String copynumber=(loanList.get(i)).getCopynumber();
+			int userid=(loanList.get(i)).getUserid();
+			if((userid==j) && ISBN.equalsIgnoreCase(string) && copynumber.equalsIgnoreCase(string2)){
+				flag=flag+1;
+				index=i;
+			}else{
+				flag=flag+0;	
+			}
+		}
+		if(flag!=0){
+			long time = date.getTime()-loanList.get(index).getDate().getTime();
+			loanList.remove(index);
+			//logger.info(String.format("Operation:Return Item;Loan Info:[%d,%s,%s,%s];State:Success", j,string,string2,dateformat(date)));
+			if(time>Config.OVERDUE*Config.STIMULATED_DAY){
+				FeeTable.getInstance().applyfee(j,time);
+			}
+			result="success";
+		}else{
+			result="The Loan Does Not Exist";
+			//logger.info(String.format("Operation:Return Item;Loan Info:[%d,%s,%s,%s];State:Fail;Reason:The Loan Does Not Exist.", j,string,string2,dateformat(date)));
+		}
+		return result;
+	}
+	public boolean looklimit(int j) {
+		boolean result=true;
+		int flag=0;
+		for(int i=0;i<loanList.size();i++){
+			int userid=(loanList.get(i)).getUserid();
+			if(userid==j){
+				flag=flag+1;
+			}else{
+				flag=flag+0;	
+			}
+		}
+		if(flag!=0){
+			result=false;
+		}
+		return result;
+	}
 }
