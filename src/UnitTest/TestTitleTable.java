@@ -28,5 +28,11 @@ public class TestTitleTable {
 	public void testGetTitleTablePass(){
 		assertNotNull(TitleTable.getInstance().getTitleTable());
 	}
+	@Test
+	public void testDelete(){
+		assertEquals("Active Loan Exists",TitleTable.getInstance().delete("9781442668584"));
+		assertEquals("success",TitleTable.getInstance().delete("9781442616899"));
+		assertEquals("The Title Does Not Exist",TitleTable.getInstance().delete("00000"));
+	}
 
 }

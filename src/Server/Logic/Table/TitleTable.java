@@ -64,7 +64,6 @@ public class TitleTable {
 		}
 		return result;
 	}
-/*	
 	public Object delete(String string) {
 		String result="";
 		int index=0;
@@ -95,8 +94,6 @@ public class TitleTable {
 		}
 		return result;
 	}
-	
-*/
 	public List<Title> getTitleTable() {
 		return titleList;
 	}
