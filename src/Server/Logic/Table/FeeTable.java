@@ -121,7 +121,6 @@ public class FeeTable {
 	public List<Fee> getFeeTable() {
 		return feeList;
 	}
-	/*
 	public Object payfine(int i) {
 		String result="";
 		boolean oloan=LoanTable.getInstance().looklimit(i);
@@ -151,5 +150,4 @@ public class FeeTable {
 		}
 		return result;
 	}
-	*/
 }
