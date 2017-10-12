@@ -55,4 +55,8 @@ public class TestLoanTable {
 	public void testCheckLoan2Vars(){
 		assertEquals(false,LoanTable.getInstance().checkLoan("9781442668584", "1"));
 	}
+	@Test
+	public void testCheckLoan1Vars(){
+		assertEquals(true,LoanTable.getInstance().checkLoan("978144266858"));
+	}
 }
