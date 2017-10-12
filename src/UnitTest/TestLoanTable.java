@@ -31,4 +31,10 @@ public class TestLoanTable {
 	public void testCheckLimit(){
 		assertEquals(true,LoanTable.getInstance().checkLimit(0));
 	}
+	@Test
+	public void testRenewal(){
+		Date date = new GregorianCalendar(2015, Calendar.FEBRUARY, 11).getTime();
+		assertEquals("The loan does not exist",LoanTable.getInstance().renewal(1, "9781442668584", "1", date));
+		assertEquals("Outstanding Fee Exists",LoanTable.getInstance().renewal(0, "9781442668584", "1", date));
+	}
 }
