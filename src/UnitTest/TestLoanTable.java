@@ -27,4 +27,8 @@ public class TestLoanTable {
 	public void testLookUp(){
 		assertEquals(false,LoanTable.getInstance().lookup(0, "9781442668584", "1"));
 	}
+	@Test
+	public void testCheckLimit(){
+		assertEquals(true,LoanTable.getInstance().checkLimit(0));
+	}
 }
