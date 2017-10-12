@@ -72,7 +72,6 @@ public class UserTable {
 	public List<User> getUserTable() {
 		return userList;
 	}
-	/*
 	public Object delete(int i) {
 		//Since the userid in "User Creation" is automatically assigned to the user,upon its creation.
 		//Each user has a unique userid.Even it is deleted,its userid can not be assigned to other user.
@@ -115,7 +114,7 @@ public class UserTable {
     
 		return result;
 
-	}*/
+	}
 	
 	public int lookup(String string) {
 		int userid=-1;

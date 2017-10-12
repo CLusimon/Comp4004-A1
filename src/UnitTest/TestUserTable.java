@@ -3,6 +3,7 @@ package UnitTest;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
 import Server.Logic.Table.UserTable;
 
 public class TestUserTable {
@@ -38,5 +39,11 @@ public class TestUserTable {
 		assertEquals(2,UserTable.getInstance().checkUser("notTester1", "pw1")); //false username
 		assertEquals(0,UserTable.getInstance().checkUser("tester", "pw")); //correct info
 	
+	}
+	@Test
+	public void testDelete(){
+		assertEquals("Outstanding Fee Exists",UserTable.getInstance().delete(0));
+		assertEquals("success",UserTable.getInstance().delete(1));
+		assertEquals("The User Does Not Exist",UserTable.getInstance().delete(-5));
 	}
 }
