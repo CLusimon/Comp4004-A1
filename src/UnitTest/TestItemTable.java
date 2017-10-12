@@ -31,4 +31,11 @@ public class TestItemTable {
 	public void testGetItemTablePass(){
 		assertNotNull(ItemTable.getInstance().getItemTable());
 	}
+	@Test
+	public void testDelete(){
+		assertEquals("Active Loan Exists",ItemTable.getInstance().delete("9781442668584", "1"));
+		assertEquals("success",ItemTable.getInstance().delete("9781611687910", "1"));
+		assertEquals("The Item Does Not Exist",ItemTable.getInstance().delete("9781442616899", "1"));
+		
+	}
 }

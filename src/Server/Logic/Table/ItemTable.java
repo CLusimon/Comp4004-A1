@@ -65,12 +65,8 @@ public class ItemTable {
 		}
 		return result;
 	}
-	/*
+	
 	public Object delete(String string, String string2) {
-		//Since the itemid and copynumber in is automatically assigned to the item,upon its creation.
-		//Each item has a unique itemid and copynumber.Even it is deleted,they can not be assigned to other item.
-		//To maintain the correctness of the data,here instead delete index from the List.
-		//I choose to remove the item's information instead the whole index.
 		String result="";
 		int index=0;
 		int flag=0;
@@ -100,7 +96,7 @@ public class ItemTable {
 		}
 		return result;
 	}
-	*/
+	
 	public void deleteAll(String string) {
 		for(int i=0;i<itemList.size();i++){
 			if(string.equalsIgnoreCase(itemList.get(i).getISBN())){
