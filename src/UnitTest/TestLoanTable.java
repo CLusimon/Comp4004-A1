@@ -47,4 +47,12 @@ public class TestLoanTable {
 	public void testLookLimit(){
 		assertEquals(true,LoanTable.getInstance().looklimit(0));
 	}
+	@Test
+	public void testCheckUser(){
+		assertEquals(true,LoanTable.getInstance().checkUser(0));
+	}
+	@Test
+	public void testCheckLoan2Vars(){
+		assertEquals(false,LoanTable.getInstance().checkLoan("9781442668584", "1"));
+	}
 }
