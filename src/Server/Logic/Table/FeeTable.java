@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import Server.Logic.Model.Fee;
 import Server.Logic.Model.Loan;
 import Utilities.Config;
 
 
-//import utilities.Trace;
+import Utilities.Trace;
 
 public class FeeTable {
-	//private Logger logger = Trace.getInstance().getLogger("opreation_file");
+	private Logger logger = Trace.getInstance().getLogger("opreation_file");
 	List<Fee> feeList=new ArrayList<Fee>();
     private static class FeeListHolder {
         private static final FeeTable INSTANCE = new FeeTable();
@@ -83,7 +83,7 @@ public class FeeTable {
     	for(int i=0;i<loanList.size();i++){
     		applyfee(loanList.get(i).getUserid(), new Date().getTime()-loanList.get(i).getDate().getTime());
     	}
-    	//logger.info(String.format("Operation:Initialize FeeTable;FeeTable: %s", feeList));
+    	logger.info(String.format("Operation:Initialize FeeTable;FeeTable: %s", feeList));
 	}
 	public void applyfee(int j, long time) {
 		int flag=0;
@@ -100,21 +100,21 @@ public class FeeTable {
 			if(a>=0){
 				feeList.get(index).setFee(a+feeList.get(index).getFee());
 				feeList.get(index).setUserid(j);
-				//logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,a+feeList.get(index).getFee()));
+				logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,a+feeList.get(index).getFee()));
 			}else{
 				feeList.get(index).setFee(feeList.get(index).getFee());
 				feeList.get(index).setUserid(j);
-				//logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,a+feeList.get(index).getFee()));
+				logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,a+feeList.get(index).getFee()));
 			}
 		}else{
 			if(a>=0){
 				Fee fee=new Fee(j,a);
 				feeList.add(fee);
-				//logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,a));
+				logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,a));
 			}else{
 				Fee fee=new Fee(j,0);
 				feeList.add(fee);
-				//logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,0));
+				logger.info(String.format("Operation:Apply OutStanding Fee;Fee Info:[%d,%d];State:Success", j,0));
 			}
 		}
 	}
@@ -141,12 +141,12 @@ public class FeeTable {
 		}
 		if(oloan==false){
 			result="Borrowing Items Exist";
-			//logger.info(String.format("Operation:Pay Fine;Fee Info:[%d,%d];State:Fail;Reason:Borrowing Items Exist.", i,fee));
+			logger.info(String.format("Operation:Pay Fine;Fee Info:[%d,%d];State:Fail;Reason:Borrowing Items Exist.", i,fee));
 		}else{
 			feeList.get(index).setUserid(i);
 			feeList.get(index).setFee(0);
 			result="success";
-			//logger.info(String.format("Operation:Pay Fine;Fee Info:[%d,%d];State:Success", i,fee));
+			logger.info(String.format("Operation:Pay Fine;Fee Info:[%d,%d];State:Success", i,fee));
 		}
 		return result;
 	}
