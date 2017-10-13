@@ -8,8 +8,7 @@ import client.LibClient;
 import Server.Network.LibServer;
 import Utilities.Config;
 
-
-public class testAddItem {
+public class testAddUser {
 	private static LibServer server = new LibServer(Config.DEFAULT_PORT);
 	@BeforeClass
 	public static void beforeClass() {
@@ -19,23 +18,21 @@ public class testAddItem {
 	public static void tearDownAfterClass() throws Exception {
 	}
 	@Test
-	public void testAddItemExist() {
+	public void testAddUserExist() {
 		LibClient user = new LibClient(Config.DEFAULT_HOST, Config.DEFAULT_PORT);
 		server.handle(user.getID(), "Hello");
 		server.handle(user.getID(), "Clerk");
 		server.handle(user.getID(), "admin");
-		server.handle(user.getID(), "Create Item");
-		server.handle(user.getID(), "9781442616899");
+		server.handle(user.getID(), "Create User");
+		server.handle(user.getID(), "Zhibo@carleton.ca, Zhibo");
 	}
 	@Test
-	public void testAddItemTitleDoesNotExist() {
+	public void testAddUserDoesNotExist() {
 		LibClient user1 = new LibClient(Config.DEFAULT_HOST, Config.DEFAULT_PORT);
 		server.handle(user1.getID(), "Hello");
 		server.handle(user1.getID(), "Clerk");
 		server.handle(user1.getID(), "admin");
-		server.handle(user1.getID(), "Create Item");
-		server.handle(user1.getID(), "3731442668584");
-		server.handle(user1.getID(), "Create Title");
-		server.handle(user1.getID(), "3731442668584,book");
+		server.handle(user1.getID(), "Create User");
+		server.handle(user1.getID(), "clusngo@gmail.com,Clus");
 	}
 }

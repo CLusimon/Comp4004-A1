@@ -2074,4 +2074,433 @@
 @2016-01-26 14:28:46 INFO  String:144 - Operation:Pay Fine;Fee Info:[2,0];State:Fail;Reason:Borrowing Items Exist.
 @2016-01-26 14:28:46 INFO  String:149 - Operation:Pay Fine;Fee Info:[0,5];State:Success
 @2016-01-26 14:28:46 INFO  String:149 - Operation:Pay Fine;Fee Info:[0,0];State:Success
+@2017-10-13 07:00:09 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:00:09 FATAL LibServer:39 - java.net.BindException: Address already in use: JVM_Bind
+@2017-10-13 07:00:09 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:00:09 INFO  LibServer:47 - Server started: null 11
+@2017-10-13 07:00:09 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:00:09 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:00:09 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:00:09 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:00:09,0]]
+@2017-10-13 07:00:09 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:00:09 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:00:09 INFO  LibClient:31 - 58582 : Connected to server: /127.0.0.1
+@2017-10-13 07:00:09 INFO  LibClient:32 - 58582 : Connected to portid: 58582
+@2017-10-13 07:00:09 INFO  LibClient:31 - 58583 : Connected to server: /127.0.0.1
+@2017-10-13 07:00:09 INFO  LibClient:32 - 58583 : Connected to portid: 58583
+@2017-10-13 07:02:33 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:02:33 FATAL LibServer:39 - java.net.BindException: Address already in use: JVM_Bind
+@2017-10-13 07:02:33 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:02:33 INFO  LibServer:47 - Server started: null 11
+@2017-10-13 07:02:33 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:02:33 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:02:33 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:02:33 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:02:33,0]]
+@2017-10-13 07:02:33 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:02:33 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:02:33 INFO  LibClient:31 - 58647 : Connected to server: /127.0.0.1
+@2017-10-13 07:02:33 INFO  LibClient:32 - 58647 : Connected to portid: 58647
+@2017-10-13 07:02:33 INFO  LibClient:31 - 58648 : Connected to server: /127.0.0.1
+@2017-10-13 07:02:33 INFO  LibClient:32 - 58648 : Connected to portid: 58648
+@2017-10-13 07:04:11 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:04:11 FATAL LibServer:39 - java.net.BindException: Address already in use: JVM_Bind
+@2017-10-13 07:04:11 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:04:11 INFO  LibServer:47 - Server started: null 11
+@2017-10-13 07:04:11 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:04:11 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:04:11 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:04:11 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:04:11,0]]
+@2017-10-13 07:04:11 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:04:11 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:04:11 INFO  LibClient:31 - 58694 : Connected to server: /127.0.0.1
+@2017-10-13 07:04:11 INFO  LibClient:32 - 58694 : Connected to portid: 58694
+@2017-10-13 07:04:11 INFO  LibClient:31 - 58695 : Connected to server: /127.0.0.1
+@2017-10-13 07:04:11 INFO  LibClient:32 - 58695 : Connected to portid: 58695
+@2017-10-13 07:05:22 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:05:22 FATAL LibServer:39 - java.net.BindException: Address already in use: JVM_Bind
+@2017-10-13 07:05:22 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:05:22 INFO  LibServer:47 - Server started: null 11
+@2017-10-13 07:05:22 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:05:22 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:05:22 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:05:22 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:05:22,0]]
+@2017-10-13 07:05:22 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:05:22 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:05:22 INFO  LibClient:31 - 58727 : Connected to server: /127.0.0.1
+@2017-10-13 07:05:22 INFO  LibClient:32 - 58727 : Connected to portid: 58727
+@2017-10-13 07:05:22 INFO  LibClient:31 - 58728 : Connected to server: /127.0.0.1
+@2017-10-13 07:05:22 INFO  LibClient:32 - 58728 : Connected to portid: 58728
+@2017-10-13 07:09:52 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:09:52 FATAL LibServer:39 - java.net.BindException: Address already in use: JVM_Bind
+@2017-10-13 07:09:52 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:09:52 INFO  LibServer:47 - Server started: null 11
+@2017-10-13 07:09:52 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:09:52 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:09:52 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:09:52 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:09:52,0]]
+@2017-10-13 07:09:52 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:09:52 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:09:52 INFO  LibClient:31 - 58853 : Connected to server: /127.0.0.1
+@2017-10-13 07:09:52 INFO  LibClient:32 - 58853 : Connected to portid: 58853
+@2017-10-13 07:09:52 INFO  LibClient:31 - 58854 : Connected to server: /127.0.0.1
+@2017-10-13 07:09:52 INFO  LibClient:32 - 58854 : Connected to portid: 58854
+@2017-10-13 07:10:18 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:10:18 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:18 INFO  LibServer:47 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-13 07:10:18 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:10:18 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:10:18 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:10:18 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:10:18,0]]
+@2017-10-13 07:10:18 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:10:18 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:10:18 INFO  LibClient:31 - 58867 : Connected to server: /127.0.0.1
+@2017-10-13 07:10:18 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58867] Client Socket: [58867 ]
+
+@2017-10-13 07:10:18 INFO  LibClient:32 - 58867 : Connected to portid: 58867
+@2017-10-13 07:10:18 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58867 Hello
+@2017-10-13 07:10:18 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58867
+@2017-10-13 07:10:18 INFO  LibServer:118 - Output to 127.0.0.1:58867 Who Are you?Clerk or User?
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58867 Clerk
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58867 Please Input The Password:
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58867 admin
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58867 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58867 Create User
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58867 Please Input User Info:'username,password'
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58867 Zhibo@carleton.ca, Zhibo
+@2017-10-13 07:10:18 INFO  String:52 - Operation:Create New User;User Info:[Zhibo@carleton.ca, Zhibo];State:Fail;Reason:The User already existed.
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58867 The User Already Exists!
+
+@2017-10-13 07:10:18 INFO  LibClient:31 - 58868 : Connected to server: /127.0.0.1
+@2017-10-13 07:10:18 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58868] Client Socket: [58868 ]
+
+@2017-10-13 07:10:18 INFO  LibClient:32 - 58868 : Connected to portid: 58868
+@2017-10-13 07:10:18 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58868 Hello
+@2017-10-13 07:10:18 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58868
+@2017-10-13 07:10:18 INFO  LibServer:118 - Output to 127.0.0.1:58868 Who Are you?Clerk or User?
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58868 Clerk
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58868 Please Input The Password:
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58868 admin
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58868 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58868 Create User
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58868 Please Input User Info:'username,password'
+
+@2017-10-13 07:10:18 INFO  LibServer:101 - Input from 127.0.0.1:58868 clusngo@gmail.com,Clus
+@2017-10-13 07:10:18 INFO  String:49 - Operation:Create New User;User Info:[clusngo@gmail.com,Clus];State:Success
+@2017-10-13 07:10:18 INFO  LibServer:110 - Output to 127.0.0.1:58868 Success!
+
+@2017-10-13 07:10:27 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:10:27 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:27 INFO  LibServer:47 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-13 07:10:27 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:10:27 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:10:27 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:10:27 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:10:27,0]]
+@2017-10-13 07:10:27 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:10:27 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:10:27 INFO  LibClient:31 - 58874 : Connected to server: /127.0.0.1
+@2017-10-13 07:10:27 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58874] Client Socket: [58874 ]
+
+@2017-10-13 07:10:27 INFO  LibClient:32 - 58874 : Connected to portid: 58874
+@2017-10-13 07:10:27 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58874 Hello
+@2017-10-13 07:10:27 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58874
+@2017-10-13 07:10:27 INFO  LibServer:118 - Output to 127.0.0.1:58874 Who Are you?Clerk or User?
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58874 Clerk
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58874 Please Input The Password:
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58874 admin
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58874 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58874 Create Item
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58874 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58874 9781442616899
+@2017-10-13 07:10:27 INFO  String:44 - Operation:Create New Item;Item Info:[9781442616899,2];State:Success
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58874 Success!
+
+@2017-10-13 07:10:27 INFO  LibClient:31 - 58875 : Connected to server: /127.0.0.1
+@2017-10-13 07:10:27 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58875] Client Socket: [58875 ]
+
+@2017-10-13 07:10:27 INFO  LibClient:32 - 58875 : Connected to portid: 58875
+@2017-10-13 07:10:27 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 Hello
+@2017-10-13 07:10:27 INFO  LibServer:118 - Output to 127.0.0.1:58875 Who Are you?Clerk or User?
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 Clerk
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 Please Input The Password:
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 admin
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 Create Item
+@2017-10-13 07:10:27 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58875
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 3731442668584
+@2017-10-13 07:10:27 INFO  String:47 - Operation:Create New Item;Item Info:[3731442668584,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 The Title Does Not Exists!
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 Create Title
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 Please Input Title Info:'ISBN,title'
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 3731442668584,book
+@2017-10-13 07:10:27 INFO  String:45 - Operation:Create New Title;Title Info:[3731442668584,book];State:Success
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 Success!
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 Create Item
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:10:27 INFO  LibServer:101 - Input from 127.0.0.1:58875 3731442668584
+@2017-10-13 07:10:27 INFO  String:44 - Operation:Create New Item;Item Info:[3731442668584,1];State:Success
+@2017-10-13 07:10:27 INFO  LibServer:110 - Output to 127.0.0.1:58875 Success!
+
+@2017-10-13 07:10:41 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:10:41 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:41 INFO  LibServer:47 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-13 07:10:41 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:10:41 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:10:41 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:10:41 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:10:41,0]]
+@2017-10-13 07:10:41 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:10:41 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:10:41 INFO  LibClient:31 - 58884 : Connected to server: /127.0.0.1
+@2017-10-13 07:10:41 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58884] Client Socket: [58884 ]
+
+@2017-10-13 07:10:41 INFO  LibClient:32 - 58884 : Connected to portid: 58884
+@2017-10-13 07:10:41 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58884 Hello
+@2017-10-13 07:10:41 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58884
+@2017-10-13 07:10:41 INFO  LibServer:118 - Output to 127.0.0.1:58884 Who Are you?Clerk or User?
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58884 Clerk
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58884 Please Input The Password:
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58884 admin
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58884 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58884 Create Item
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58884 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58884 9781442616899
+@2017-10-13 07:10:41 INFO  String:44 - Operation:Create New Item;Item Info:[9781442616899,2];State:Success
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58884 Success!
+
+@2017-10-13 07:10:41 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58885] Client Socket: [58885 ]
+
+@2017-10-13 07:10:41 INFO  LibClient:31 - 58885 : Connected to server: /127.0.0.1
+@2017-10-13 07:10:41 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:10:41 INFO  LibClient:32 - 58885 : Connected to portid: 58885
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 Hello
+@2017-10-13 07:10:41 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58885
+@2017-10-13 07:10:41 INFO  LibServer:118 - Output to 127.0.0.1:58885 Who Are you?Clerk or User?
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 Clerk
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 Please Input The Password:
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 admin
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 Create Item
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 3731442668584
+@2017-10-13 07:10:41 INFO  String:47 - Operation:Create New Item;Item Info:[3731442668584,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 The Title Does Not Exists!
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 Create ABC
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 Please select from the menu.Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 3731442668584,book
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 Please select from the menu.Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 Create Item
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:10:41 INFO  LibServer:101 - Input from 127.0.0.1:58885 3731442668584
+@2017-10-13 07:10:41 INFO  String:47 - Operation:Create New Item;Item Info:[3731442668584,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-13 07:10:41 INFO  LibServer:110 - Output to 127.0.0.1:58885 The Title Does Not Exists!
+
+@2017-10-13 07:12:00 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:12:00 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:12:00 INFO  LibServer:47 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-13 07:12:00 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:12:00 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:12:00 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:12:00 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:12:00,0]]
+@2017-10-13 07:12:00 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:12:00 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:12:00 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58937] Client Socket: [58937 ]
+
+@2017-10-13 07:12:00 INFO  LibClient:31 - 58937 : Connected to server: /127.0.0.1
+@2017-10-13 07:12:00 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:12:00 INFO  LibClient:32 - 58937 : Connected to portid: 58937
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58937 Hello
+@2017-10-13 07:12:00 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58937
+@2017-10-13 07:12:00 INFO  LibServer:118 - Output to 127.0.0.1:58937 Who Are you?Clerk or User?
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58937 Clerk
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58937 Please Input The Password:
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58937 admin
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58937 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58937 Create Item
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58937 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58937 9781442616899
+@2017-10-13 07:12:00 INFO  String:44 - Operation:Create New Item;Item Info:[9781442616899,2];State:Success
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58937 Success!
+
+@2017-10-13 07:12:00 INFO  LibClient:31 - 58938 : Connected to server: /127.0.0.1
+@2017-10-13 07:12:00 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58938] Client Socket: [58938 ]
+
+@2017-10-13 07:12:00 INFO  LibClient:32 - 58938 : Connected to portid: 58938
+@2017-10-13 07:12:00 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58938 Hello
+@2017-10-13 07:12:00 INFO  LibServer:118 - Output to 127.0.0.1:58938 Who Are you?Clerk or User?
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58938 Clerk
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58938 Please Input The Password:
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58938 admin
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58938 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:12:00 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58938
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58938 Create Item
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58938 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58938 3731442668584
+@2017-10-13 07:12:00 INFO  String:47 - Operation:Create New Item;Item Info:[3731442668584,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58938 The Title Does Not Exists!
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58938 Create Title
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58938 Please Input Title Info:'ISBN,title'
+
+@2017-10-13 07:12:00 INFO  LibServer:101 - Input from 127.0.0.1:58938 3731442668584,book
+@2017-10-13 07:12:00 INFO  String:45 - Operation:Create New Title;Title Info:[3731442668584,book];State:Success
+@2017-10-13 07:12:00 INFO  LibServer:110 - Output to 127.0.0.1:58938 Success!
+
+@2017-10-13 07:13:07 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:13:07 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:13:07 INFO  LibServer:47 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-13 07:13:07 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:13:07 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:13:07 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:13:07 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:13:07,0]]
+@2017-10-13 07:13:07 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:13:07 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:13:07 INFO  LibClient:31 - 58978 : Connected to server: /127.0.0.1
+@2017-10-13 07:13:07 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58978] Client Socket: [58978 ]
+
+@2017-10-13 07:13:07 INFO  LibClient:32 - 58978 : Connected to portid: 58978
+@2017-10-13 07:13:07 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58978 Hello
+@2017-10-13 07:13:07 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58978
+@2017-10-13 07:13:07 INFO  LibServer:118 - Output to 127.0.0.1:58978 Who Are you?Clerk or User?
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58978 Clerk
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58978 Please Input The Password:
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58978 admin
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58978 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58978 Create Item
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58978 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58978 9781442616899
+@2017-10-13 07:13:07 INFO  String:44 - Operation:Create New Item;Item Info:[9781442616899,2];State:Success
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58978 Success!
+
+@2017-10-13 07:13:07 INFO  LibClient:31 - 58979 : Connected to server: /127.0.0.1
+@2017-10-13 07:13:07 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58979] Client Socket: [58979 ]
+
+@2017-10-13 07:13:07 INFO  LibClient:32 - 58979 : Connected to portid: 58979
+@2017-10-13 07:13:07 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58979 Hello
+@2017-10-13 07:13:07 INFO  LibServer:118 - Output to 127.0.0.1:58979 Who Are you?Clerk or User?
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58979 Clerk
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58979 Please Input The Password:
+
+@2017-10-13 07:13:07 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58979
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58979 admin
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58979 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58979 Create Item
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58979 Please Input Item Info:'ISBN'
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58979 3731442668584
+@2017-10-13 07:13:07 INFO  String:47 - Operation:Create New Item;Item Info:[3731442668584,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58979 The Title Does Not Exists!
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58979 Create Title
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58979 Please Input Title Info:'ISBN,title'
+
+@2017-10-13 07:13:07 INFO  LibServer:101 - Input from 127.0.0.1:58979 3731442668584,book
+@2017-10-13 07:13:07 INFO  String:45 - Operation:Create New Title;Title Info:[3731442668584,book];State:Success
+@2017-10-13 07:13:07 INFO  LibServer:110 - Output to 127.0.0.1:58979 Success!
+
+@2017-10-13 07:13:20 INFO  LibServer:33 - Binding to port 5050
+@2017-10-13 07:13:20 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:13:20 INFO  LibServer:47 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-13 07:13:20 INFO  String:30 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 07:13:20 INFO  String:25 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 07:13:20 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 07:13:20 INFO  String:28 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 07:13:20,0]]
+@2017-10-13 07:13:20 INFO  String:107 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 07:13:20 INFO  String:86 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 07:13:20 INFO  LibClient:31 - 58986 : Connected to server: /127.0.0.1
+@2017-10-13 07:13:20 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58986] Client Socket: [58986 ]
+
+@2017-10-13 07:13:20 INFO  LibClient:32 - 58986 : Connected to portid: 58986
+@2017-10-13 07:13:20 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58986 Hello
+@2017-10-13 07:13:20 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58986
+@2017-10-13 07:13:20 INFO  LibServer:118 - Output to 127.0.0.1:58986 Who Are you?Clerk or User?
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58986 Clerk
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58986 Please Input The Password:
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58986 admin
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58986 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58986 Create User
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58986 Please Input User Info:'username,password'
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58986 Zhibo@carleton.ca, Zhibo
+@2017-10-13 07:13:20 INFO  String:52 - Operation:Create New User;User Info:[Zhibo@carleton.ca, Zhibo];State:Fail;Reason:The User already existed.
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58986 The User Already Exists!
+
+@2017-10-13 07:13:20 INFO  LibClient:31 - 58987 : Connected to server: /127.0.0.1
+@2017-10-13 07:13:20 INFO  LibServer:71 - Client accepted : Client Address : [/127.0.0.1:58987] Client Socket: [58987 ]
+
+@2017-10-13 07:13:20 INFO  LibClient:32 - 58987 : Connected to portid: 58987
+@2017-10-13 07:13:20 INFO  LibServer:62 - Waiting for a client ...
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58987 Hello
+@2017-10-13 07:13:20 INFO  LibServer:118 - Output to 127.0.0.1:58987 Who Are you?Clerk or User?
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58987 Clerk
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58987 Please Input The Password:
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58987 admin
+@2017-10-13 07:13:20 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__58987
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58987 What can I do for you?Menu:Create User/Title/Item,Delete User/Title/Item.
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58987 Create User
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58987 Please Input User Info:'username,password'
+
+@2017-10-13 07:13:20 INFO  LibServer:101 - Input from 127.0.0.1:58987 clusngo@gmail.com,Clus
+@2017-10-13 07:13:20 INFO  String:49 - Operation:Create New User;User Info:[clusngo@gmail.com,Clus];State:Success
+@2017-10-13 07:13:20 INFO  LibServer:110 - Output to 127.0.0.1:58987 Success!
+
 @
