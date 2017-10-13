@@ -7,9 +7,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
 
-//import utilities.Trace;
+import Utilities.Trace;
 /* Modified method based on the course COMP 3004 example*/
 /*Reference:http://people.scs.carleton.ca/~jeanpier//304W16/T1%20TDD/4b-%20ChatExample%20and%20other%20files/*/
 public class ServerThread extends Thread{
@@ -18,7 +18,7 @@ public class ServerThread extends Thread{
 	private LibServer server = null;
 	private BufferedReader streamIn = null;
 	private BufferedWriter streamOut = null;
-	//private Logger logger = Trace.getInstance().getLogger(this);
+	private Logger logger = Trace.getInstance().getLogger(this);
 	private String clientAddress = null;;
 
 	private boolean done = false;
@@ -41,7 +41,7 @@ public class ServerThread extends Thread{
 			streamOut.flush();
 		} catch (IOException ioe) {
 			String message = String.format("Exception thrown : %s \n", ioe.getMessage());
-			//logger.info(String.format ("Class: %-12s: %s",this.getClass().getSimpleName(), message));
+			logger.info(String.format ("Class: %-12s: %s",this.getClass().getSimpleName(), message));
 			server.remove(ID);
 		}
 	}
@@ -50,14 +50,14 @@ public class ServerThread extends Thread{
 		return clientAddress;
 	}
 	public void run() {
-		//logger.info(String.format ("Class: %-12s: %s",this.getClass().getSimpleName(), "Server Thread Running"+"__"+ID));
+		logger.info(String.format ("Class: %-12s: %s",this.getClass().getSimpleName(), "Server Thread Running"+"__"+ID));
 		while (!done) {
 			try {
 				/** Received a message and pass to the server to handle */
 				server.handle(ID, streamIn.readLine());
 			} catch (IOException ioe) {
 				String message = String.format("Exception thrown : %s \n", ioe.getMessage());
-				//logger.info(String.format ("Class: %-12s: %s",this.getClass().getSimpleName(), message));
+				logger.info(String.format ("Class: %-12s: %s",this.getClass().getSimpleName(), message));
 				server.remove(ID);
 				break;
 			}}
